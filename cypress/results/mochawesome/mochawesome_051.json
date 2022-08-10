@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-10T19:48:34.670Z",
+    "end": "2022-08-10T19:48:37.999Z",
+    "duration": 3329,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ff30dd48-44ef-4065-9730-4ce386c8eb2b",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/js-alerts.js",
+      "file": "cypress/integration/webdriver-uni/js-alerts.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d1b82ac2-325f-45c3-b203-7f7e0566513c",
+          "title": "Handle js alerts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate js confirm alert box works correctly when clicking ok",
+              "fullTitle": "Handle js alerts Validate js confirm alert box works correctly when clicking ok",
+              "timedOut": null,
+              "duration": 3284,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit(\"http://www.webdriveruniversity.com/Contact-Us/contactus.html\")\ncy.visit(\"http://www.webdriveruniversity.com\");\ncy.get('#popup-alerts').invoke('removeAttr', 'target').click({\n  force: true\n}); //cy.get('#button1').click();\ncy.get('#button4').click();\ncy.on('window:confirm', str => {\n  return false;\n});\ncy.get('#confirm-alert-text').contains('You pressed Cancel!');",
+              "err": {},
+              "uuid": "aa6fc1c1-0808-4468-9e31-6dcd9e9e1335",
+              "parentUUID": "d1b82ac2-325f-45c3-b203-7f7e0566513c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aa6fc1c1-0808-4468-9e31-6dcd9e9e1335"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3284,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

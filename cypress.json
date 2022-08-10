@@ -12,7 +12,7 @@
         "webdriveruni_homepage": "http://www.webdriveruniversity.com",
         "first_name": "sarah"
     },
-    "projectId": "4ysb49",
+    "projectId": "e8j3ux",
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "configFile": "reporter-config.json"
