@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-08-09T19:27:48.761Z",
+    "end": "2022-08-09T19:28:24.873Z",
+    "duration": 36112,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "96e7e589-a1f6-4706-9a90-55d87a871c38",
+      "title": "",
+      "fullFile": "cypress/integration/automation-test-store/contact-us.js",
+      "file": "cypress/integration/automation-test-store/contact-us.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "515e63bf-c44a-4d84-be04-5917afd579b4",
+          "title": "Test Contact Us Form via Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to submit a successful submission via contact us form",
+              "fullTitle": "Test Contact Us Form via Automation Test Store Should be able to submit a successful submission via contact us form",
+              "timedOut": null,
+              "duration": 15159,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.automationteststore.com/\");\ncy.get(\"a[href$='contact']\").click().then(function (linkText) {\n  cy.log(\"clicked on link using text:\" + linkText.text());\n});\ncy.get(\"@user\").then(user => {\n  cy.get('#ContactUsFrm_first_name').type(user.first_name);\n  cy.get('#ContactUsFrm_email').type(user.email);\n});\ncy.get('#ContactUsFrm_email').should('have.attr', 'name', 'email');\ncy.get('#ContactUsFrm_enquiry').type(\"live your life the way it should be lived pleasing to God\");\ncy.get('.col-md-6 > .btn').click(); //cy.get('.mb40 > :nth-child(3)').should('have.text', 'Your enquiry has been successfully sent to the store owner!')",
+              "err": {
+                "message": "CypressError: `cy.get()` could not find a registered alias for: `@user`.\nYou have not aliased anything yet.",
+                "estack": "CypressError: `cy.get()` could not find a registered alias for: `@user`.\nYou have not aliased anything yet.\n    at $Cy.aliasNotFoundFor (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:154884:74)\n    at $Cy.getAlias (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:154818:12)\n    at Context.get (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:164430:23)\nFrom Your Spec Code:\n    at Context.eval (https://www.automationteststore.com/__cypress/tests?p=cypress\\integration\\automation-test-store\\contact-us.js:109:8)",
+                "diff": null
+              },
+              "uuid": "a3b963a6-2916-43c3-8c0f-a1c5a9d9860f",
+              "parentUUID": "515e63bf-c44a-4d84-be04-5917afd579b4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a3b963a6-2916-43c3-8c0f-a1c5a9d9860f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15159,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

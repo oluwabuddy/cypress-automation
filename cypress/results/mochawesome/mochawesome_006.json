@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-04T23:36:57.867Z",
+    "end": "2022-08-04T23:37:29.590Z",
+    "duration": 31723,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "96f10fe0-d744-4586-9d4b-6b3d4d33caa4",
+      "title": "",
+      "fullFile": "cypress/integration/automation-test-store/unbugqa.js",
+      "file": "cypress/integration/automation-test-store/unbugqa.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "36256604-94f2-4609-9475-ecae52896ca5",
+          "title": "Test login page with valid data",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify user can access google",
+              "fullTitle": "Test login page with valid data Verify user can access google",
+              "timedOut": null,
+              "duration": 25933,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://google.com');\ncy.get('.gLFyf').type(\"Oshikomaiya Oluwaseun\");\ncy.get('.FPdoLc > center > .gNO89b').click();",
+              "err": {},
+              "uuid": "bb0494c7-72a7-44ce-a226-704d076c3b04",
+              "parentUUID": "36256604-94f2-4609-9475-ecae52896ca5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bb0494c7-72a7-44ce-a226-704d076c3b04"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25933,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

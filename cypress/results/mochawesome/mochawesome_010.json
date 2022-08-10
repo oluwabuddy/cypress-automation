@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-04T23:38:54.009Z",
+    "end": "2022-08-04T23:38:59.707Z",
+    "duration": 5698,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e4397eb7-fa89-49bc-a441-a5786d744b0d",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/file-upload.js",
+      "file": "cypress/integration/webdriver-uni/file-upload.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b290471f-8099-45d2-ac07-d14521a20db4",
+          "title": "Test file upload via webdriver uni",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Upload a file...",
+              "fullTitle": "Test file upload via webdriver uni Upload a file...",
+              "timedOut": null,
+              "duration": 4195,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://www.webdriveruniversity.com\");\ncy.get('#file-upload').invoke(\"removeAttr\", \"target\").click();\ncy.fixture(\"mac-laptop-png-13.png\", \"base64\").then(fileContent => {\n  cy.get(\"#myFile\").attachFile({\n    fileContent,\n    fileName: \"mac-laptop-png-13.png\",\n    mimeType: \"image/png\"\n  }, {\n    uploadeType: \"input\"\n  });\n});\ncy.get(\"#submit-button\").click();",
+              "err": {},
+              "uuid": "9c9b3309-b61c-430e-896f-19d920dbf3c9",
+              "parentUUID": "b290471f-8099-45d2-ac07-d14521a20db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Upload no file...",
+              "fullTitle": "Test file upload via webdriver uni Upload no file...",
+              "timedOut": null,
+              "duration": 1471,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://www.webdriveruniversity.com\");\ncy.get('#file-upload').invoke(\"removeAttr\", \"target\").click();\ncy.get(\"#submit-button\").click();",
+              "err": {},
+              "uuid": "bc6f2fa8-a064-4216-b602-4fcce3a6bc52",
+              "parentUUID": "b290471f-8099-45d2-ac07-d14521a20db4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9c9b3309-b61c-430e-896f-19d920dbf3c9",
+            "bc6f2fa8-a064-4216-b602-4fcce3a6bc52"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5666,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

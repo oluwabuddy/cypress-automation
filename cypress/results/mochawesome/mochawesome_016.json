@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-09T18:53:22.012Z",
+    "end": "2022-08-09T18:53:29.443Z",
+    "duration": 7431,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "384f9325-a014-4e30-bd7c-5aadebe3980a",
+      "title": "",
+      "fullFile": "cypress/integration/automation-test-store/selfcare.js",
+      "file": "cypress/integration/automation-test-store/selfcare.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "72b3e8aa-c4c1-4eaa-9493-b0028961ce37",
+          "title": "Test login page with valid data",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to log user in",
+              "fullTitle": "Test login page with valid data Should be able to log user in",
+              "timedOut": null,
+              "duration": 4765,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://selfcare.spectranet.com.ng/login\");\ncy.get('#userid').type('16113650');\ncy.get('#password').type('123456');\ncy.get('.MuiButton-containedPrimary').click();\ncy.get('#notistack-snackbar').should('have.text', 'bool is not defined');",
+              "err": {},
+              "uuid": "90d70aa8-a735-4d63-8f03-a67ea80ac225",
+              "parentUUID": "72b3e8aa-c4c1-4eaa-9493-b0028961ce37",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "90d70aa8-a735-4d63-8f03-a67ea80ac225"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4765,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
