@@ -26,12 +26,12 @@ describe("Test Contact Us Form via WebdriverUni", () => {
         contact_Us_PO.contactForm_Submission(Cypress.env(" first_name"), data.last_name, data.email, "How can i learn Cypress?", "h1", "Thank You for your Message");
     });
 
-    it("Should not be able to submit a successful submission via contact us form as all fields are required", () => {
-        if(Cypress.isBrowser('firefox')){
+    // it("Should not be able to submit a successful submission via contact us form as all fields are required", () => {
+    //     if(Cypress.isBrowser('firefox')){
 
-        } else {
-            contact_Us_PO.contactForm_Submission(data.first_name, data.last_name, " ", "How can i learn Cypress?", "body", "Error: invalid email address");
-        }
+    //     } else {
+    //         contact_Us_PO.contactForm_Submission(data.first_name, data.last_name, " ", "How can i learn Cypress?", "body", "Error: invalid email address");
+    //     }
         
-    });
+    // });
 });
